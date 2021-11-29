@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,75 @@
 	<title>Formuláře</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-	<h1>Formuláře</h1>
+	<h1>Jezisek pro kocicky</h1>
 
 	<!--
 		Adresa pro odeslání formuláře:
 		http://formular.itgirls.cz/
 	-->
 
+	<form action="http://formular.itgirls.cz" method="get">
+
+		<label for="jmeno">
+			<h3>Jmeno</h3>
+		</label>
+		<input type="text" id="jmeno" name="jmeno" value "">
+
+		<label for="prijmeni">
+			<h3>Prijmeni</h3>
+		</label>
+		<input type="text" id="prijmeni" name="prijmeni" value "">
+
+		<label for="darky">
+			<h3>Co si prejes za darecky?</h3>
+		</label>
+		<textarea idid="darky" name="darky" rows="4" cols="30" value=""></textarea>
+
+		<label for="zlobils">
+			<h3>Zlobils?</h3>
+		</label>
+		<input type="radio" id="zlobils1" name="zlobils1"><label for="zlobils1"> Byl jsem hodna kocicka.</label>
+		<input type="radio" id="zlobils2" name="zlobils2"><label for="zlobils2"> Byl jsem zlobivy serout.</label>
+
+		<label for="darkyvyber">
+			<h3>Prejes si neco z tehle veci?</h3>
+		</label>
+		<input type="checkbox" id="granulky" name="granulky"><label for="granulky">Granulky</label><br>
+		<input type="checkbox" id="whiskas" name="whiskas"><label for="whiskas">Whiskas</label><br>
+		<input type="checkbox" id="skrabadlo" name="skrabadlo"><label for="skrabadlo">Skrabadlo</label>
+
+		<label for="darkykolik">
+			<h3>Kolik si prejes darku?</h3>
+		</label>
+		<input type="range" id="darkykolik" name="darkykolik">
+
+		<label for="barva">
+			<h3>Jaka barva ti ladi ke kozisku?</h3>
+		</label>
+		<input type="color" id="barva" name="barva">
+
+		<label for="masicka">
+			<h3>Jaky mas nejradsi masicka?</h3>
+		</label>
+		<input type="text" list="masicka">
+		<datalist id="masicka">
+			<option value="hovezi">
+			<option value="veprove">
+			<option value="kruti">
+			<option value="kachni">
+			<option value="mysi">
+			</option>
+		</datalist>
+
+
+
+	</form>
+
 
 
 </body>
+
 </html>
