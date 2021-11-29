@@ -19,6 +19,11 @@ h1 {
 	font-size: 40px;
 	text-align: center;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: lightgrey;
+	width: 60%;
+	margin: auto;
+	padding: 1rem 0rem 0rem 0rem;
+	min-width: 320px;
 }
 
 
